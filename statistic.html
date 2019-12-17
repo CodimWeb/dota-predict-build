@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__panel">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="" class="logo__img">
+                    </a>
+                    <nav class="navbar navbar-expand-md">
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Предстоящие матчи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Прошедшие матчи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Статистика</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О проекте</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <button class="btn btn-lang header__lang">
+                        <div class="header__lang__curr header__lang__item">
+                            <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                            <span>Рус</span>
+                        </div>
+                        <ul class="header__lang__list">
+                            <li>
+                                <a href="#" class="header__lang__item">
+                                    <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                                    <span>En</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__lang__item">
+                                    <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                                    <span>Рус</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__lang__item">
+                                    <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                                    <span>Рус</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </button>
+                    <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false">
+                        <span class="navbar-toggler-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="statistic">
+                    <div class="statistic__panel">
+                        <div class="statistic__round">
+                            <svg viewBox="0 0 36 36" class="statistic__chart__red">
+                                <path class="statistic__circle__red"
+                                    stroke-dasharray="100, 100"
+                                    d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                            <svg viewBox="0 0 36 36" class="statistic__chart">
+                                <!-- в  stroke-dasharray передать % предсказанных матчей 1м параметром -->
+                                <path class="statistic__circle"
+                                    stroke-dasharray="97.8, 100"
+                                    d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                            <div class="statistic__percent">
+                                <!-- в  data-animate передать % предсказанных матчей -->
+                                <p class="statistic__percent__title"><span class="animate-num animate-num-1" data-animate="97.8">0</span>%</p>
+                                <p class="statistic__percent__subtitle">Верно предсказанных матчей</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="statistic__count">
+                        <div class="statistic__count__item statistic__count__true">
+                            <span class="animate-num animate-num-2" data-animate="262">0</span>
+                            <p>Верно</p>
+                        </div>
+                        <div class="statistic__count__item statistic__count__all">
+                            <span class="animate-num animate-num-3" data-animate="264">0</span>
+                            <p>Матчей всего</p>
+                        </div>
+                        <div class="statistic__count__item statistic__count__false">
+                            <span class="animate-num animate-num-4" data-animate="2">0</span>
+                            <p>Неверно</p>
+                        </div>
+                    </div>
+                    <div class="live__title statistic__title">Статистика прогнозов</div>
+                    <div class="statistic__subtitle">За последние 100 матчей</div>
+                    <div class="statistic__graph">
+                        <div class="statistic__graph__default">
+                            <div class="statistic__graph__row statistic__graph__winner">
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                            </div>
+                            <div class="statistic__graph__row statistic__graph__lose">
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistic__graph__active">
+                            <div class="statistic__graph__row statistic__graph__winner">
+                                <div class="statistic__graph__title">Победа</div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup ">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                            </div>
+                            <div class="statistic__graph__row statistic__graph__lose">
+                                <div class="statistic__graph__title">Поражение</div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active">
+                                        <div class="statistic__popup">
+                                            <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                                <div class="match__info">
+                                                    <div class="match__team match__team__1">
+                                                        <div class="match__team__info">
+                                                            <a href="#" class="match__team__name">Vega</a>
+                                                            <p class="match__team__chanсe">Поражение</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="match__team__score">
+                                                        <span class="match__team__1__score">35</span>
+                                                        <span>&nbsp;:&nbsp;</span>
+                                                        <span class="match__team__2__score">17</span>
+                                                    </div>
+                                                    <div class="match__team match__team__2">
+                                                        <div class="match__team__info">
+                                                            <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                            <p class="match__team__chanсe">Победа</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress match-progress">
+                                                    <div class="progress-bar" style="width: 65%;"></div>
+                                                </div>
+                                                <div class="match__status">
+                                                    <ul>
+                                                        <li>LB Cup</li>
+                                                        <li>BO3</li>
+                                                        <li>Карта #2</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="statistic__graph__item">
+                                    <div class="statistic__graph__bar active"></div>
+                                    <div class="statistic__popup">
+                                        <div class="match__panel">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">Поражение</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__score">
+                                                    <span class="match__team__1__score">35</span>
+                                                    <span>&nbsp;:&nbsp;</span>
+                                                    <span class="match__team__2__score">17</span>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">Победа</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="match__status">
+                                                <ul>
+                                                    <li>LB Cup</li>
+                                                    <li>BO3</li>
+                                                    <li>Карта #2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__panel">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="" class="logo__img">
+                    </a>
+                    <p class="footer__copy">&copy; 2019</p>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item active">
+                            <a class="footer-nav__link" href="#">Предстоящие матчи</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Прошедшие матчи</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Статистика</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">О проекте</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>    
+        </div>
+    </div>
+
+    <div class="modal modal-over fade" id="modal-over" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="live__title modal-over__title">матч <span>окончен</span></div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-over__subtitle">Хотите посмотреть другие матчи?</p>
+                    <div class="modal-over__btns">
+                        <button class="btn btn-telegramm-lg btn-show">Да, хочу</button>
+                        <button class="btn btn-ghost" data-dismiss="modal" aria-label="Close">Нет, спасибо</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.animateNumber.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

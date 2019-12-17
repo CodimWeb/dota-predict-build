@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__panel">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="" class="logo__img">
+                    </a>
+                    <nav class="navbar navbar-expand-md">
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Предстоящие матчи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Прошедшие матчи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Статистика</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О проекте</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <button class="btn btn-lang header__lang">
+                        <div class="header__lang__curr header__lang__item">
+                            <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                            <span>Рус</span>
+                        </div>
+                        <ul class="header__lang__list">
+                            <li>
+                                <a href="#" class="header__lang__item">
+                                    <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                                    <span>En</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__lang__item">
+                                    <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                                    <span>Рус</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__lang__item">
+                                    <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                                    <span>Рус</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </button>
+                    <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false">
+                        <span class="navbar-toggler-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="live__title__panel">
+                    <div class="live__title">
+                        <p><span>live</span> матчи <span class="live__title__point"></span></p>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="live__container">
+                            <div class="live__nav">
+                                <div class="live__nav__container">
+                                    <button class="btn btn-toggle active">
+                                        <span class="live__nav__logo"><img src="img/logo-team-1.png" alt=""></span>
+                                        <span class="live__nav__logo"><img src="img/logo-team-2.png" alt=""></span>
+                                    </button>
+                                    <button class="btn btn-toggle">
+                                        <span class="live__nav__logo"><img src="img/logo-team-1.png" alt=""></span>
+                                        <span class="live__nav__logo"><img src="img/logo-team-2.png" alt=""></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="live__panel">
+                                <div class="live__video__container embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZQ4gDsCy6SY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="live__statistic">
+                                    <div class="match">
+                                        <div class="match__panel loser"> <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                            <div class="match__info">
+                                                <div class="match__team match__team__1">
+                                                    <div class="match__team__logo">
+                                                        <img src="img/logo-team-1.png" alt="">
+                                                    </div>
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">Vega</a>
+                                                        <p class="match__team__chanсe">71%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="match__status d-none d-md-block">
+                                                    <ul>
+                                                        <li>LB Cup</li>
+                                                        <li>BO3</li>
+                                                        <li>Карта #2</li>
+                                                    </ul>
+                                                    <p>Победа на карте</p>
+                                                </div>
+                                                <div class="match__team match__team__2">
+                                                    <div class="match__team__logo">
+                                                        <img src="img/logo-team-2.png" alt="">
+                                                    </div>
+                                                    <div class="match__team__info">
+                                                        <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                        <p class="match__team__chanсe">29%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress match-progress">
+                                                <div class="progress-bar" style="width: 71%;"></div>
+                                            </div>
+                                            <div class="match__team__pic">
+                                                <div class="match__team__pic__container">
+                                                    <div class="match__team__pic__row">
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                                <div class="match__detail">
+                                                    <div class="match__detail__text">
+                                                        Детальная статистика матча
+                                                    </div>
+                                                </div>
+                                                <div class="match__team__pic__container">
+                                                    <div class="match__team__pic__row">
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="match__team__pic__item">
+                                                            <div class="match__team__pic__hero">
+                                                                <img src="img/team-hero.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coefficient">
+                                    <div class="coefficient__table">
+                                        <div class="coefficient__table__header">
+                                            <div class="coefficient__table__tr">
+                                                <div class="coefficient__table__td">Победа<br/>на&nbsp;карте</div>
+                                                <div class="coefficient__table__td">Победа<br/>в&nbsp;матче</div>
+                                                <div class="coefficient__table__td">Лучшие<br/>коэффициенты</div>
+                                                <div class="coefficient__table__td">Победа<br/>в&nbsp;матче</div>
+                                                <div class="coefficient__table__td">Победа<br/>на&nbsp;карте</div>
+                                            </div>    
+                                        </div>
+                                        <div class="coefficient__table__body">
+                                            <div class="coefficient__table__tr">
+                                                <div class="coefficient__table__td">1.37</div>
+                                                <div class="coefficient__table__td">1.54</div>
+                                                <div class="coefficient__table__td"><img src="img/bookmeker-logo.jpg" alt=""></div>
+                                                <div class="coefficient__table__td">3.25</div>
+                                                <div class="coefficient__table__td">7.02</div>
+                                            </div> 
+                                            <div class="coefficient__table__tr">
+                                                <div class="coefficient__table__td">1.37</div>
+                                                <div class="coefficient__table__td">1.54</div>
+                                                <div class="coefficient__table__td"><img src="img/bookmeker-logo-2.png" alt=""></div>
+                                                <div class="coefficient__table__td">3.25</div>
+                                                <div class="coefficient__table__td">7.02</div>
+                                            </div> 
+                                            <div class="coefficient__table__tr">
+                                                <div class="coefficient__table__td">1.37</div>
+                                                <div class="coefficient__table__td">1.54</div>
+                                                <div class="coefficient__table__td"><img src="img/bookmeker-logo-2.png" alt=""></div>
+                                                <div class="coefficient__table__td">3.25</div>
+                                                <div class="coefficient__table__td">7.02</div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match__nav">
+                            <div class="live__title active">
+                                <p><span>Предстоящие</span> матчи</p>
+                            </div>
+                            <div class="live__title">
+                                <p><span>Прошедшие</span> матчи</p>
+                            </div>
+                        </div>
+                        <div class="match__list">
+                            <div class="match__list__item">
+                                <a href="#" class="match__list__link"></a>   
+                                <div class="match__panel">
+                                    <div class="match__info">
+                                        <div class="match__team match__team__1">
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-1.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">Vega</a>
+                                                <p class="match__team__chanсe">71%</p>
+                                            </div>
+                                        </div>
+                                        <div class="match__status">
+                                            <p class="match__status__title">The International</p>
+                                            <p class="match__date">
+                                                <span>23.08</span>
+                                                <span>18:30</span>
+                                            </p>
+                                        </div>
+                                        <div class="match__team match__team__2"> 
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-2.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                <p class="match__team__chanсe">29%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress match-progress">
+                                        <div class="progress-bar" style="width: 71%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match__list__item">
+                                <a href="#" class="match__list__link"></a>       
+                                <div class="match__panel loser">  <!-- 1 я команда по дефолту победитель, если побеждает 2я команда добавить класс loser на match__panel -->
+                                    <div class="match__info">
+                                        <div class="match__team match__team__1">
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-1.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">Vega</a>
+                                                <p class="match__team__chanсe">35%</p>
+                                            </div>
+                                        </div>
+                                        <div class="match__status">
+                                            <p class="match__status__title">The International</p>
+                                            <p class="match__date">
+                                                <span>23.08</span>
+                                                <span>18:30</span>
+                                            </p>
+                                        </div>
+                                        <div class="match__team match__team__2">
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-2.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                <p class="match__team__chanсe">65%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress match-progress">
+                                        <div class="progress-bar" style="width: 65%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match__list__item">
+                                <a href="#" class="match__list__link"></a>       
+                                <div class="match__panel">
+                                    <div class="match__info">
+                                        <div class="match__team match__team__1">
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-1.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">Vega</a>
+                                                <p class="match__team__chanсe">71%</p>
+                                            </div>
+                                        </div>
+                                        <div class="match__status">
+                                            <p class="match__status__title">The International</p>
+                                            <p class="match__date">
+                                                <span>23.08</span>
+                                                <span>18:30</span>
+                                            </p>
+                                        </div>
+                                        <div class="match__team match__team__2">
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-2.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                <p class="match__team__chanсe">29%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress match-progress">
+                                        <div class="progress-bar" style="width: 71%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match__list__item">
+                                <a href="#" class="match__list__link"></a>       
+                                <div class="match__panel">
+                                    <div class="match__info">
+                                        <div class="match__team match__team__1">
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-1.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">Vega</a>
+                                                <p class="match__team__chanсe">71%</p>
+                                            </div>
+                                        </div>
+                                        <div class="match__status">
+                                            <p class="match__status__title">The International</p>
+                                            <p class="match__date">
+                                                <span>23.08</span>
+                                                <span>18:30</span>
+                                            </p>
+                                        </div>
+                                        <div class="match__team match__team__2">
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-2.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                <p class="match__team__chanсe">29%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress match-progress">
+                                        <div class="progress-bar" style="width: 71%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match__list__item">
+                                <a href="#" class="match__list__link"></a>   
+                                <div class="match__panel">
+                                    <div class="match__info">
+                                        <div class="match__team match__team__1">
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-1.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">Vega</a>
+                                                <p class="match__team__chanсe">71%</p>
+                                            </div>
+                                        </div>
+                                        <div class="match__status">
+                                            <p class="match__status__title">The International</p>
+                                            <p class="match__date">
+                                                <span>23.08</span>
+                                                <span>18:30</span>
+                                            </p>
+                                        </div>
+                                        <div class="match__team match__team__2">
+                                            <div class="match__team__logo">
+                                                <img src="img/logo-team-2.png" alt="">
+                                            </div>
+                                            <div class="match__team__info">
+                                                <a href="#" class="match__team__name">-UNIQUE-</a>
+                                                <p class="match__team__chanсe">29%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress match-progress">
+                                        <div class="progress-bar" style="width: 71%;"></div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <button class="btn btn-more btn-block">Показать еще матчи</button>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="telegramm-lg">
+                            <p class="telegramm-lg__title">Присоединяйтесь<br/>к нашему телеграм каналу</p>
+                            <p class="telegramm-lg__subtitle">Чтобы быть в курсе всех актуальных новостей нашего сайта и мира Dota2!</p>
+                            <a href="#" class="btn btn-block btn-telegramm-lg">Присоединиться</a>
+                        </div>
+                        <div class="rating__panel">
+                            <div class="rating__panel__header">
+                                <div class="live__title">
+                                    <p><span>рейтинг</span> букмекеров <span class="live__title__icon"><img src="img/rating-bookmeker.png" alt=""></span></p>
+                                </div>
+                            </div>
+                            <div class="rating__panel__body">
+                                <ul class="rating__list">
+                                    <li>
+                                        <a href="#" class="rating__item">
+                                            <div class="rating__item__pos">1</div>
+                                            <div class="rating__item__logo"><img src="img/bookmeker-logo.jpg" alt=""></div>
+                                            <div class="rating__item__name">Parimatch</div>
+                                            <div class="rating__item__score">1296</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="rating__item">
+                                            <div class="rating__item__pos">2</div>
+                                            <div class="rating__item__logo"><img src="img/bookmeker-logo-2.png" alt=""></div>
+                                            <div class="rating__item__name">gg.bet</div>
+                                            <div class="rating__item__score">1190</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="rating__item">
+                                            <div class="rating__item__pos">3</div>
+                                            <div class="rating__item__logo"><img src="img/bookmeker-logo-2.png" alt=""></div>
+                                            <div class="rating__item__name">betsdota2</div>
+                                            <div class="rating__item__score">1170</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating__panel">
+                            <div class="rating__panel__header">
+                                <div class="live__title">
+                                    <p><span>рейтинг</span> команд <span class="live__title__icon"><img src="img/rating-team.png" alt=""></span></p>
+                                </div>
+                            </div>
+                            <div class="rating__panel__body">
+                                <ul class="rating__list">
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">1</div>
+                                        <div class="rating__item__logo"><img src="img/team-1.png" alt=""></div>
+                                        <div class="rating__item__name">Secret</div>
+                                        <div class="rating__item__score">1296</div>
+                                    </li>
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">2</div>
+                                        <div class="rating__item__logo"><img src="img/team-2.png" alt=""></div>
+                                        <div class="rating__item__name">EG</div>
+                                        <div class="rating__item__score">1190</div>
+                                    </li>
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">3</div>
+                                        <div class="rating__item__logo"><img src="img/team-3.png" alt=""></div>
+                                        <div class="rating__item__name">VP</div>
+                                        <div class="rating__item__score">1170</div>
+                                    </li>
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">4</div>
+                                        <div class="rating__item__logo"><img src="img/team-1.png" alt=""></div>
+                                        <div class="rating__item__name">Secret</div>
+                                        <div class="rating__item__score">1296</div>
+                                    </li>
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">5</div>
+                                        <div class="rating__item__logo"><img src="img/team-2.png" alt=""></div>
+                                        <div class="rating__item__name">EG</div>
+                                        <div class="rating__item__score">1190</div>
+                                    </li>
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">6</div>
+                                        <div class="rating__item__logo"><img src="img/team-3.png" alt=""></div>
+                                        <div class="rating__item__name">VP</div>
+                                        <div class="rating__item__score">1170</div>
+                                    </li>
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">7</div>
+                                        <div class="rating__item__logo"><img src="img/team-1.png" alt=""></div>
+                                        <div class="rating__item__name">Secret</div>
+                                        <div class="rating__item__score">1296</div>
+                                    </li>
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">8</div>
+                                        <div class="rating__item__logo"><img src="img/team-2.png" alt=""></div>
+                                        <div class="rating__item__name">EG</div>
+                                        <div class="rating__item__score">1190</div>
+                                    </li>
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">9</div>
+                                        <div class="rating__item__logo"><img src="img/team-3.png" alt=""></div>
+                                        <div class="rating__item__name">VP</div>
+                                        <div class="rating__item__score">1170</div>
+                                    </li>
+                                    <li class="rating__item">
+                                        <div class="rating__item__pos">10</div>
+                                        <div class="rating__item__logo"><img src="img/team-3.png" alt=""></div>
+                                        <div class="rating__item__name">VP</div>
+                                        <div class="rating__item__score">1170</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="telegramm">
+                            <div class="telegramm__panel">
+                                <p class="telegramm__title">присоединяйтесь к нашему<br/><span>telegram каналу!</span></p>
+                                <p class="telegramm__subtitle">Узнавай лучшие прогнозы первым!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="live__title new__title">
+                        <p><span>новости</span> из мира dota 2</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="#" class="news__item">
+                                <div class="news__item__image">
+                                    <div class="news__item__image__container">
+                                        <img src="img/new-item.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="news__item__text">
+                                        «Пошла вторая ходка». Dread снова получил бан на Twitch
+                                </div>
+                                <div class="news__item__date">17.08.2019</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="#" class="news__item">
+                                <div class="news__item__image">
+                                    <div class="news__item__image__container">
+                                        <img src="img/new-item.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="news__item__text">
+                                        «Пошла вторая ходка». Dread снова получил бан на Twitch
+                                </div>
+                                <div class="news__item__date">17.08.2019</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="#" class="news__item">
+                                <div class="news__item__image">
+                                    <div class="news__item__image__container">
+                                        <img src="img/new-item.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="news__item__text">
+                                        «Пошла вторая ходка». Dread снова получил бан на Twitch
+                                </div>
+                                <div class="news__item__date">17.08.2019</div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="#" class="news__item">
+                                <div class="news__item__image">
+                                    <div class="news__item__image__container">
+                                        <img src="img/new-item.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="news__item__text">
+                                        «Пошла вторая ходка». Dread снова получил бан на Twitch
+                                </div>
+                                <div class="news__item__date">17.08.2019</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__panel">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="" class="logo__img">
+                    </a>
+                    <p class="footer__copy">&copy; 2019</p>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item active">
+                            <a class="footer-nav__link" href="#">Предстоящие матчи</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Прошедшие матчи</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Статистика</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">О проекте</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>    
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__panel">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="" class="logo__img">
+                    </a>
+                    <nav class="navbar navbar-expand-md">
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Предстоящие матчи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Прошедшие матчи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Статистика</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О проекте</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <button class="btn btn-lang header__lang">
+                        <div class="header__lang__curr header__lang__item">
+                            <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                            <span>Рус</span>
+                        </div>
+                        <ul class="header__lang__list">
+                            <li>
+                                <a href="#" class="header__lang__item">
+                                    <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                                    <span>En</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__lang__item">
+                                    <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                                    <span>Рус</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__lang__item">
+                                    <span class="header__lang__flag"><img src="img/flag-rus.png" alt=""></span>
+                                    <span>Рус</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </button>
+                    <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false">
+                        <span class="navbar-toggler-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="detail__match__header">
+                    <div class="match">
+                        <div class="match__panel">
+                            <div class="match__info">
+                                <div class="match__team match__team__1">
+                                    <div class="match__team__logo">
+                                        <img src="img/logo-team-1.png" alt="">
+                                    </div>
+                                    <div class="match__team__info">
+                                        <p class="match__team__name">Vega</p>
+                                        <p class="match__team__chanсe"><span class="match__team__chanсe__title">Шанс на победу:</span> <span>71%</span></p>
+                                    </div>
+                                </div>
+                                <div class="match__status">
+                                    <ul>
+                                        <li>LB Cup</li>
+                                        <li>BO3</li>
+                                        <li>Карта #2</li>
+                                    </ul>
+                                   <div class="match__score">
+                                       <div class="match__score__count">22</div>
+                                        <div class="match__time__panel">
+                                            <div class="match__score__panel match__score__left">
+                                                <div class="match__score__rect active"></div>
+                                                <div class="match__score__rect"></div>
+                                                <div class="match__score__rect"></div>
+                                            </div>
+                                            <div class="match__time">
+                                                    29:49
+                                            </div>
+                                            <div class="match__score__panel match__score__right">
+                                                <div class="match__score__rect active"></div>
+                                                <div class="match__score__rect active"></div>
+                                                <div class="match__score__rect"></div>
+                                            </div>
+                                        </div>    
+                                       <div class="match__score__count">24</div>
+                                   </div>
+                                </div>
+                                <div class="match__team match__team__2">
+                                    <div class="match__team__logo">
+                                        <img src="img/logo-team-2.png" alt="">
+                                    </div>
+                                    <div class="match__team__info">
+                                        <p class="match__team__name">-UNIQUE-</p>
+                                        <p class="match__team__chanсe"><span class="match__team__chanсe__title">Шанс на победу:</span> <span>29%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress match-progress">
+                                <div class="progress-bar" style="width: 71%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="live__container detail__live__container">
+                            <div class="live__nav">
+                                <div class="live__nav__container">
+                                    <button class="btn btn-toggle active">
+                                        <span class="live__nav__logo"><img src="img/logo-team-1.png" alt=""></span>
+                                        <span class="live__nav__logo"><img src="img/logo-team-2.png" alt=""></span>
+                                    </button>
+                                    <button class="btn btn-toggle">
+                                        <span class="live__nav__logo"><img src="img/logo-team-1.png" alt=""></span>
+                                        <span class="live__nav__logo"><img src="img/logo-team-2.png" alt=""></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="live__panel">
+                                <div class="live__video__container embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZQ4gDsCy6SY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="telegramm-lg">
+                            <p class="telegramm-lg__title">Присоединяйтесь<br/>к нашему телеграм каналу</p>
+                            <p class="telegramm-lg__subtitle">Чтобы быть в курсе всех актуальных новостей нашего сайта и мира Dota2!</p>
+                            <a href="#" class="btn btn-block btn-telegramm-lg">Присоединиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gamers">
+                    <div class="gamer__list">
+                        <div class="gamer__list__header">
+                            <div>Player</div>
+                            <div>Hero</div>
+                            <div>Winrate</div>
+                            <div>Networth</div>
+                            <div>Skills</div>
+                            <div>Items</div>
+                        </div>
+                        <div class="gamer__list__body">
+                            <div class="gamer__logo">
+                                <img src="img/team-2.png" alt="">
+                            </div>
+                            <div class="gamer__list__body__bg">
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate loser">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate loser">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate loser">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="gamer__list">
+                        <div class="gamer__list__header">
+                            <div>Player</div>
+                            <div>Hero</div>
+                            <div>Winrate</div>
+                            <div>Networth</div>
+                            <div>Skills</div>
+                            <div>Items</div>
+                        </div>
+                        <div class="gamer__list__body">
+                            <div class="gamer__logo">
+                                <img src="img/team-2.png" alt="">
+                            </div>
+                            <div class="gamer__list__body__bg">
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate loser">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate loser">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="gamer__list__item">
+                                    <div class="gamer__data">
+                                        <div class="gamer__ava">
+                                            <img src="img/gamer-ava.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__info">
+                                            <p class="gamer__name">VP.Ramzes666</p>
+                                            <p class="gamer__lvl">Уровень 21</p>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__hero">
+                                        <div class="gamer__hero__img">
+                                            <img src="img/hero-img.jpg" alt="">
+                                        </div>
+                                        <div class="gamer__hero__info">
+                                            <div class="gamer__stat__label">KDA</div>
+                                            <ul class="gamer__stat">
+                                                <li>5</li>
+                                                <li>4</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>    
+                                    </div>
+                                    <div class="gamer__winrate loser">
+                                        56%
+                                    </div>
+                                    <div class="gamer__farm">
+                                        11190
+                                    </div>
+                                    <div class="gamer__skils">
+                                        <ul class="gamer__skils__list">
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/disable-skill.jpg" alt="">
+                                            </li>
+                                            <li class="gamer__skils__item">
+                                                <img src="img/skill.jpg" alt="">
+                                                <ul class="gamer__skils__lvl">
+                                                    <li class="active"></li>
+                                                    <li class="active"></li>
+                                                    <li></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="gamer__talant">
+                                            <img src="img/talant.jpg" alt="">
+                                            <div class="gamer__talant__panel">
+                                                <ul class="gamer__talant__list">
+                                                    <li>
+                                                        <div class="gamer__talant__item">+7 эйдолонов от Demonic Conversion</div>
+                                                        <div class="gamer__talant__lvl">25</div>
+                                                        <div class="gamer__talant__item">+5 срабатывания у Malefice</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item">+60 к урону Enigma эйдолонов</div>
+                                                        <div class="gamer__talant__lvl">20</div>
+                                                        <div class="gamer__talant__item">+500 к здоровью</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+150 золота в минуту</div>
+                                                        <div class="gamer__talant__lvl">15</div>
+                                                        <div class="gamer__talant__item">-15% перезарядки способностей</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="gamer__talant__item active">+15% к сопротивлению магии</div>
+                                                        <div class="gamer__talant__lvl">10</div>
+                                                        <div class="gamer__talant__item">+25 к скорости передвижения</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gamer__items__list">
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/gamer-item.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                        <div class="gamer__item"><img src="img/empty-slot.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__panel">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="" class="logo__img">
+                    </a>
+                    <p class="footer__copy">&copy; 2019</p>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item active">
+                            <a class="footer-nav__link" href="#">Предстоящие матчи</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Прошедшие матчи</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Статистика</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">О проекте</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>    
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
